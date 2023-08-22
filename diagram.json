@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "author": "Williams Limonchi Sandoval",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-st-nucleo-c031c6", "id": "nucleo", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 126.62,
+      "left": 302.86,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 212.21,
+      "left": 298.51,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 129.96,
+      "left": -116.94,
+      "attrs": { "color": "green", "key": "i", "bounce": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 47.68,
+      "left": -61.21,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 118.31,
+      "left": -73.75,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "led1:A", "nucleo:PA5", "green", [ "v0" ] ],
+    [ "r1:1", "led1:C", "green", [ "h0" ] ],
+    [ "r1:2", "nucleo:GND.9", "green", [ "h36.28", "v-120.87", "h-73.46", "v27.37", "h1.8" ] ],
+    [ "nucleo:GND.5", "btn1:1.l", "black", [ "h-166.13", "v-0.3", "h-24.14", "v-60.99" ] ],
+    [ "btn1:2.r", "nucleo:PC13", "green", [ "h21.1", "v65.03" ] ],
+    [ "nucleo:PD1", "led2:A", "green", [ "v0" ] ],
+    [ "r2:1", "led2:C", "green", [ "v0" ] ],
+    [ "r2:2", "nucleo:GND.5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

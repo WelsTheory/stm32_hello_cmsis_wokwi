@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+elf = "build/release/build/Stm32_hello_cmsis_wokwi.elf"
+firmware = "build/release/build/Stm32_hello_cmsis_wokwi.hex"

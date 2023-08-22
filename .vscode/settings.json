@@ -1,0 +1,10 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.configureOnOpen": true,
+  "files.associations": {
+    "stm32c0xx.h": "c",
+    "gpio.h": "c",
+    "gpio_lib.h": "c",
+    "main.h": "c"
+  }
+}
