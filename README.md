@@ -2,7 +2,9 @@
 
 [![Build and Simulate in Wokwi](https://github.com/wokwi/stm32-hello-wokwi/actions/workflows/ci.yml/badge.svg)](https://github.com/wokwi/stm32-hello-wokwi/actions/workflows/ci.yml)
 
-A simple "Hello World" example showing how to run an STM32 project in [Wokwi for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode).
+A simple "Hello World without HAL" example showing how to run an STM32 project in [Wokwi for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode).
+
+![Imagen](/Img/Hello_VsCode.PNG)
 
 ## Building
 
